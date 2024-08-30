@@ -1,7 +1,7 @@
-#Problema 1
-##Análisis
-[Análisis](c:\Users\marie\Downloads\Reservas.jpg)
-##Pseudocódigo
+# Problema 1
+## Análisis
+![Análisis](c:\Users\marie\Downloads\Reservas.jpg) 
+## Pseudocódigo
 ``` 
 Inicio
     Leer titulo 
