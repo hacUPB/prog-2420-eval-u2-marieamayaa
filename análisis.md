@@ -1,6 +1,6 @@
 # Problema 1
 ## Análisis
-![Análisis](c:\Users\marie\Downloads\Reservas.jpg) 
+![Análisis](Reservas.jpg) 
 ## Pseudocódigo
 ``` 
 Inicio
