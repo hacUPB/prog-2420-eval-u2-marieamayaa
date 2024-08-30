@@ -1,6 +1,6 @@
 # Problema 1
 ## Análisis
-![Análisis](Reservas.jpg) 
+[Análisis](https://www.canva.com/design/DAGPVQEeh_8/F5SzCVhVqq-KLxCGnzGquA/edit?utm_content=DAGPVQEeh_8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) 
 ## Pseudocódigo
 ``` 
 Inicio
