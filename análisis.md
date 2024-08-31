@@ -84,9 +84,9 @@ Inicio
     Leer coeficiente_arrastre
     Leer altitud_minima
     Leer perdida_minima
-    
-    cont= 0
-    altitud_perdida = 0
+    Definir cont= 0
+    Definir altitud_perdida = 0
+    Definir altitud_ini=0
 
     Mientras
         altitud_actual > altitud_minima 
@@ -95,7 +95,7 @@ Inicio
         Hacer
         contador_orbitas = contador_orbitas + 1
         altitud_perdida = coeficiente_arrastre * altitud_actual
-        altitud_actual = altitud_actual - altitud_perdida
+        altitud_ini = altitud_actual - altitud_perdida
         coeficiente_arrastre = coeficiente_arrastre + 0.0001
         Si
              altitud_perdida <= perdida_minima 
