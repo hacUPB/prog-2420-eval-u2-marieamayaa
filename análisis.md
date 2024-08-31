@@ -110,7 +110,7 @@ Inicio
     Fin mientras
 Fin
 ```
-##Autoevaluación 
+## Autoevaluación 
 - Asistencia y Participación = 5
 - Análisis = 4
 - Algoritmo = 4
