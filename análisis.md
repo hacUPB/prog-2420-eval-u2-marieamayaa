@@ -74,6 +74,43 @@ Inicio
     Imprimir "Nombre completo: " + titulo + " " + nombre + " " + origen+""+destino+""+dia_semana+""+dia_mes+""+costo""+asiento_asignado+""
 Fin
 ```
+# Problema 2
+## Análisis
+[Análisis](https://www.canva.com/design/DAGPb3NKrg0/nCDSEGZ5hhvOO5kJ0lquUw/edit?utm_content=DAGPb3NKrg0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+## Pseudocódigo
+```
+Inicio
+    Leer altitud_actual
+    Leer coeficiente_arrastre
+    Leer altitud_minima
+    Leer perdida_minima
+    
+    cont= 0
+    altitud_perdida = 0
+
+    Mientras
+        altitud_actual > altitud_minima 
+        altitud_perdida > perdida_minima
+        contador_orbitas == 0 
+        Hacer
+        contador_orbitas = contador_orbitas + 1
+        altitud_perdida = coeficiente_arrastre * altitud_actual
+        altitud_actual = altitud_actual - altitud_perdida
+        coeficiente_arrastre = coeficiente_arrastre + 0.0001
+        Si
+             altitud_perdida <= perdida_minima 
+            Imprimir "El satélite se ha estabilizado en órbita."
+            Imprimir "Altitud final: " + altitud_actual
+            Imprimir "Número de órbitas completadas: " + contador_orbitas
+            Simo
+                Imprimir "El satélite ha reingresado en la atmósfera terrestre."
+                Imprimir "Número total de órbitas completadas: " + contador_orbitas
+            Fin sino
+        Fin si
+    Fin mientras
+Fin
+```
+
 
 
 
