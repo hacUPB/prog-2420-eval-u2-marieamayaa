@@ -4,6 +4,15 @@ nombre = input('Ingrese su nombre y apellido:')
 print(f'¡Bienvenido a Fast Airlines {título} {nombre}!')
 
 # Selección de vuelo
+import datetime
+
+semana = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado","domingo"]
+hoy= datetime.datetime.now()
+
+fecha = input("Ingrese la fecha del viaje en formato dd/mm/aaaa ")
+fecha_sis = datetime.datetime.strptime(fecha, "%d/%m/%Y")
+
+dia= fecha_sis.weekday()
 m= 240
 n=461
 p=657
@@ -11,10 +20,7 @@ i = 'semana'
 j= 'fin de semana'
 
 origen =input('Ingrese su ciudad de origen (Bogota, Medellin, Cartagena):').lower()
-destino =input('Inngrese su ciudad de destino(Bogota, Medellin, Cartagena):').lower()
-día_sem =input('Ingrese el día de la semana en el que desea viajar (lunes a domingo):').lower()
-día_mes=input('Ingrese el día del mes en el que desea viajar (1 a 30):')
-
+destino =input('Ingrese su ciudad de destino(Bogota, Medellin, Cartagena):').lower()
 if origen == 'bogotá' and destino == 'medellin' or origen == 'medellin' and destino == 'bogota':
     distancia = m
 elif origen =='medellin' and destino =='cartagena' or origen == 'cartagena' and destino =='medellin':
@@ -23,7 +29,7 @@ else:
     distancia = p
 
 
-if día_sem == 'lunes' or día_sem== 'martes' or día_sem== 'miercoles' or día_sem=='jueves':
+if fecha_sis.weekday():
     dia= i
 else:
     dia = j
@@ -41,24 +47,21 @@ else:
 from random import randint 
 
 ubicación=input('Tiene preferencia de asiento(ventana, pasillo, sin preferencia):').lower()
-a= 'a'
-b= 'b'
-c= 'c'
 if ubicación=='ventana':
-    ubi=a
+    ubi='a'
 elif ubicación=='pasillo':
-    ubi=c
+    ubi='c'
 else:
-    ubi=b
+    ubi='b'
 
 núm_asiento = randint(1,29)
 
 
 # salida
 print(f'nombre completo:{nombre}')
-print(f'origen:{origen}')
-print(f'destino:{destino}')
-print(f'fecha de vuelo:{día_sem} {día_mes}')
+print(f'origen:{origen.capitalize()}')
+print(f'destino:{destino.capitalize()}')
+print(f'fecha:{fecha_sis.date()}')
 print(f'precio del boleto:{precio}')
 print(f'asiento: {núm_asiento} {ubi}')
 
