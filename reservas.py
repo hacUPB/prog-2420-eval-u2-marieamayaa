@@ -41,15 +41,12 @@ else:
 from random import randint 
 
 ubicación=input('Tiene preferencia de asiento(ventana, pasillo, sin preferencia):').lower()
-a= 'a'
-b= 'b'
-c= 'c'
 if ubicación=='ventana':
-    ubi=a
+    ubi='a'
 elif ubicación=='pasillo':
-    ubi=c
+    ubi='c'
 else:
-    ubi=b
+    ubi='b'
 
 núm_asiento = randint(1,29)
 
